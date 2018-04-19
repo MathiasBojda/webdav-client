@@ -29,10 +29,10 @@ createClient.setFetchMethod(fetch);
 
 var client = createClient(this.url, {
 		ntlm: {
-			username,
-			password,
-			domain,
-			workstation
+			username: '',
+			password: '',
+			domain: '',
+			workstation: '' // optional, if blank leave ''
 		}
 	});
 );

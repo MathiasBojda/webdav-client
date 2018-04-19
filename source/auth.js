@@ -1,5 +1,7 @@
 "use strict";
 
+var fetch = require("node-fetch");
+
 function generateBasicAuthHeader(username, password) {
     return "Basic " + Buffer.from(username + ":" + password).toString("base64");
 }

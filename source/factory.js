@@ -66,14 +66,20 @@ function createClient(remoteURL, username, password) {
     const baseOptions = {
         headers: {},
         remotePath: urlTools.extractURLPath(remoteURL),
-        remoteURL: remoteURL
+        remoteURL: remoteURL,
+        ntlm: {}
     };
 
-    if (username) {
+    if (username && !username.ntlm) {
         baseOptions.headers.Authorization =
             typeof username === "object"
                 ? authTools.generateTokenAuthHeader(username)
                 : authTools.generateBasicAuthHeader(username, password);
+    } else if (typeof username == "object" && username.ntlm) {
+        // Setting this in the headers to later remove it in the ntlm fetch
+        // This is a bit of a hack to save some time, since headers are passed
+        // along in every method.
+        baseOptions.headers.ntlm = merge(baseOptions.ntlm, username.ntlm);
     }
 
     return {

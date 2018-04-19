@@ -27,11 +27,11 @@ var fetch = require('webdav').ntlm.fetch;
 
 createClient.setFetchMethod(fetch);
 
-var client = createClient(this.url, {
+var client = createClient("https://webdav-server.org/remote.php/webdav", {
 		ntlm: {
-			username: '',
-			password: '',
-			domain: '',
+			username: 'john',
+			password: 'doe',
+			domain: 'google.com', // domain of url
 			workstation: '' // optional, if blank leave ''
 		}
 	});

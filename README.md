@@ -21,6 +21,8 @@ npm install webdav --save
 ## Usage
 Usage is very simple ([API](API.md)) - the main exported object is a factory to create adapter instances:
 
+### NTLM Support
+
 ```js
 var createClient = require("webdav");
 var fetch = require('webdav').ntlm.fetch;
@@ -44,6 +46,7 @@ client
     });
 ```
 
+### Basic
 
 ```js
 var createClient = require("webdav");

@@ -23,6 +23,30 @@ Usage is very simple ([API](API.md)) - the main exported object is a factory to 
 
 ```js
 var createClient = require("webdav");
+var fetch = require('webdav').ntlm.fetch;
+
+createClient.setFetchMethod(fetch);
+
+var client = createClient(this.url, {
+		ntlm: {
+			username,
+			password,
+			domain,
+			workstation
+		}
+	});
+);
+
+client
+    .getDirectoryContents("/")
+    .then(function(contents) {
+        console.log(JSON.stringify(contents, undefined, 4));
+    });
+```
+
+
+```js
+var createClient = require("webdav");
 
 var client = createClient(
     "https://webdav-server.org/remote.php/webdav",

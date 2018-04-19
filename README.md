@@ -1,10 +1,10 @@
-![WebDAV](https://raw.githubusercontent.com/perry-mitchell/webdav-client/master/webdav.jpg)
-
-> A WebDAV client written in JavaScript for NodeJS.
-
-[![Build Status](https://travis-ci.org/perry-mitchell/webdav-client.svg?branch=master)](https://travis-ci.org/perry-mitchell/webdav-client) [![npm version](https://badge.fury.io/js/webdav.svg)](https://www.npmjs.com/package/webdav) [![monthly downloads](https://img.shields.io/npm/dm/webdav.svg)](https://www.npmjs.com/package/webdav)
-
 ## About
+
+NTLM Auth support added by: @MathiasBojda
+This was a fork from https://github.com/perry-mitchell/webdav-client.
+This version includes NTLM support.
+The NTLM inspiration and a good chunk of code comes from https://github.com/SamDecrock/node-http-ntlm.
+
 This client was branched from [webdav-fs](https://github.com/perry-mitchell/webdav-fs) as the core functionality deserved its own repository. As **webdav-fs**' API was designed to resemble NodeJS' fs API, little could be done to improve the adapter interface for regular use.
 
 This WebDAV client library is designed to provide an improved API for low-level WebDAV integration. This client uses `window.fetch` when available in the browser.

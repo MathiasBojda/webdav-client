@@ -1,6 +1,11 @@
 # WebDAV-client changelog
 
 ## 1.5.2
+_2018-04-19_
+
+ * Added rough NTLM support.
+
+## 1.5.2
 _2018-03-25_
 
  * Fix bug where requesting directory contents at paths with trailing slashes would return parent directory in results

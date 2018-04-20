@@ -1,6 +1,6 @@
 {
-  "name": "webdav",
-  "version": "1.5.2",
+  "name": "webdav-ntlm",
+  "version": "1.5.4",
   "description": "WebDAV client for NodeJS",
   "main": "dist/index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/perry-mitchell/webdav-client.git"
+    "url": "git+https://github.com/MathiasBojda/webdav-client.git"
   },
   "keywords": [
     "webdav",
@@ -36,11 +36,14 @@
     ]
   },
   "author": "Perry Mitchell <perry@perrymitchell.net>",
+  "contributors": [
+    "Mathias Bojda <mathiasbojda@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/perry-mitchell/webdav-client/issues"
+    "url": "https://github.com/MathiasBojda/webdav-client/issues"
   },
-  "homepage": "https://github.com/perry-mitchell/webdav-client#readme",
+  "homepage": "https://github.com/MathiasBojda/webdav-client#readme",
   "dependencies": {
     "merge": "~1.2.0",
     "node-fetch": "~2.0.0",

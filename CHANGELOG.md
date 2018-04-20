@@ -1,6 +1,6 @@
 # WebDAV-client changelog
 
-## 1.5.2
+## 1.5.3
 _2018-04-19_
 
  * Added rough NTLM support.
